@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="background">
+
+        <div class="slideShow">
+
+            <img id="slideShow--img" src="https://www.themoviedb.org/t/p/original/2MyhuUYDqMzZWIVVBVqUKy2TbfK.jpg" alt="">
+
+            <div id="slideShow--index"></div>
+
+            <div class="slideShow--button">
+                <i onmousedown="preSlide()" onmouseup="resetClick()" id="preButton" class=" slideShow--next fa fa-chevron-left"></i>
+                <i onmousedown="nextSlide()" onmouseup="resetClick()" id="nextButton" class=" slideShow--previous fa fa-chevron-right"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="slideshow.js"></script>
+</body>
+
+</html>
